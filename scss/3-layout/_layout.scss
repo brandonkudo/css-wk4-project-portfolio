@@ -1,9 +1,16 @@
 .nav-bar {
   display: flex;
   justify-content: space-around;
-  // width: 100%;
-  background-color: gray;
+  background-color: $grey-dk;
   padding: 10px;
+  p {
+    color: white;
+  }
+  a {
+    color: lightcoral;
+    margin-left: 10px;
+    text-decoration: none;
+  }
 }
 
 .nav-links {
@@ -13,11 +20,14 @@
 
 .hero {
   // width: 100%;
+  background-image: url("../img/me.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: cadetblue;
-  min-height: 40vh;
+  min-height: 50vh;
   padding: 10px;
 }
 
@@ -30,21 +40,36 @@
 
 .mid-nav-links {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: $break-sm) {
+    flex-direction: column;
+  }
 }
 
 .main-body {
   display: flex;
+  @media screen and (max-width: $break-sm) {
+    flex-direction: column;
+  }
 }
 
 .sidebar {
   background-color: peachpuff;
-  padding: 10px;
+  padding: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  min-width: 20vw;
+  @media screen and (max-width: $break-sm) {
+    width: 100vw;
+  }
 }
 
 .about-me {
   background-color: lightcoral;
-  padding: 10px;
+  padding: 20px;
+  transition: ease 1s;
+  &:hover {
+  }
 }

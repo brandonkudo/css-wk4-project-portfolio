@@ -1,0 +1,11 @@
+@import '4-components/animations';
+
+h1 {
+  color: white;
+  font-size: 80px;
+  animation: titlePop ease 3s;
+  transition: ease 1s;
+  &:hover {
+    color: lightcoral;
+  }
+}
