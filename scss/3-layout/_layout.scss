@@ -7,6 +7,8 @@
   border-bottom: 1px solid $grey-border;
   p {
     color: white;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
     font-weight: bold;
   }
   a:first-child {
@@ -63,6 +65,9 @@
     }
   }
   a {
+    font-weight: bold;
+    font-family: arial;
+    font-size: 13px;
     text-decoration: none;
     color: $grey-dk;
     margin: 0 20px 0 20px;
@@ -96,15 +101,22 @@
   flex-direction: column;
   min-width: 20vw;
   h2 {
+    font-family: 'Cormorant Garamond', serif;
     color: $main;
     padding: 5px;
     margin-bottom: 10px;
     border-bottom: 1px solid $grey-lt;
   }
   a {
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
     text-decoration: none;
     color: white;
     margin-bottom: 10px;
+    &:hover {
+      color: $main;
+    }
   }
   @media screen and (max-width: $break-sm) {
     width: 100vw;
@@ -119,8 +131,16 @@
   padding: 20px;
   transition: ease 1s;
   h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
     padding: 5px;
     margin-bottom: 10px;
+  }
+  p {
+    padding: 5px;
+    font-family: arial;
+    font-size: 14px;
+    line-height: 20px;
   }
   @media screen and (max-width: $break-sm) {
     align-items: center;
