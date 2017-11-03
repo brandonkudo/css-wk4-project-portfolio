@@ -1,15 +1,32 @@
 .nav-bar {
   display: flex;
+  align-items: center;
   justify-content: space-around;
   background-color: $grey-dk;
-  padding: 10px;
+  padding: 15px 10px 15px 10px;
+  border-bottom: 1px solid $grey-border;
   p {
     color: white;
+    font-weight: bold;
+  }
+  a:first-child {
+    color: $main;
   }
   a {
-    color: lightcoral;
-    margin-left: 10px;
+    color: $grey-lt;
+    margin-left: 20px;
     text-decoration: none;
+    &:hover {
+      color: white;
+    }
+    @media screen and (max-width: $break-sm) {
+      margin-top: 10px;
+      margin-right: 20px;
+    }
+  }
+  @media screen and (max-width: $break-sm) {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -24,6 +41,7 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: cadetblue;
@@ -35,7 +53,16 @@
   display: flex;
   justify-content: center;
   padding: 10px;
-  background-color: lavender;
+  background-color: $grey-lt;
+  border-bottom: 1px solid $grey-border;
+  a {
+    text-decoration: none;
+    color: $main;
+    margin: 0 10px 0 10px;
+    &:hover {
+      color: $grey-dk;
+    }
+  }
 }
 
 .mid-nav-links {
@@ -54,22 +81,41 @@
 }
 
 .sidebar {
-  background-color: peachpuff;
+  background-color: $grey-dk;
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-width: 20vw;
+  h2 {
+    color: $main;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid $grey-lt;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+  }
   @media screen and (max-width: $break-sm) {
     width: 100vw;
   }
 }
 
 .about-me {
-  background-color: lightcoral;
+  background-color: $main;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
   padding: 20px;
   transition: ease 1s;
-  &:hover {
+  h2 {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: $break-sm) {
+    align-items: center;
   }
 }
