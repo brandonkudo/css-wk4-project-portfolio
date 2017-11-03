@@ -1,5 +1,6 @@
 h1 {
   color: white;
+  font-family: lucida;
   font-size: 80px;
   animation: pop ease 3s;
   transition: ease 1s;
@@ -15,6 +16,7 @@ h1 {
       0 -1px $main;
   }
   @media screen and (max-width: $break-sm) {
+    margin-bottom: 10px;
     font-size: 30px;
   }
 }
@@ -22,15 +24,24 @@ h1 {
 .hero {
   p {
     color: $grey-lt;
+    font-size: 20px;
+    opacity: 0;
     animation: fadeIn ease 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
   }
 }
 
 .line {
   background-color: white;
+  opacity: 0;
   height: 2px;
   width: 500px;
   animation: fadeIn ease 3s;
   animation-delay: 3s;
+  animation-fill-mode: forwards;
   margin-bottom: 10px;
+  @media screen and (max-width: $break-sm) {
+    width: 200px;
+  }
 }
