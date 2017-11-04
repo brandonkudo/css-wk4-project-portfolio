@@ -4,3 +4,26 @@ $grey-border: #212020;
 $main: lightcoral;
 
 $break-sm: 600px;
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.animate-delay {
+  animation: fadeIn ease 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
